@@ -1,0 +1,23 @@
+﻿<Window x:Class="PT_laby_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PT_laby_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ToolBarTray Background="White">
+            <ToolBar HorizontalAlignment="Left" VerticalAlignment="Center" Band="2" BandIndex="1" RenderTransformOrigin="0.5,0.5" Height="NaN" Margin="10,190,0,0" Width="NaN" Header="File">
+                <MenuItem ToolBar.OverflowMode="Always" Header="Open" Click="Open_file"/>
+                <MenuItem ToolBar.OverflowMode="Always" Header="Exit" Click="Exit_program"/>
+                <MenuItem ToolBar.OverflowMode="Always" Header="About" Click="About"/>
+            </ToolBar>
+        </ToolBarTray>
+        <TreeView x:Name="triview" Margin="61,10,0,0" SelectedItemChanged="RAHS_attr"></TreeView>
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="400,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="382" Width="390"/>
+        <StatusBar VerticalAlignment="Bottom" Margin="0,0,450,0" Height="32">
+            <TextBlock x:Name="RAHS_info"/>
+        </StatusBar>
+    </Grid>
+</Window>

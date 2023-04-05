@@ -1,0 +1,15 @@
+﻿<Window x:Class="PT_laby_2.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PT_laby_2"
+        mc:Ignorable="d"
+        Title="About" Height="381" Width="278">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,131,0,0" TextWrapping="Wrap" Text="Mateusz Nowak" VerticalAlignment="Top"/>
+        <Button Content="Exit" Click="exit_butt" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,211,0,0" TextWrapping="Wrap" Text="Laby 2 PT v1.0" VerticalAlignment="Top" Width="86"/>
+
+    </Grid>
+</Window>

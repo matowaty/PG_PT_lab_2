@@ -1,0 +1,27 @@
+﻿<Window x:Class="PT_laby_2.Create_dialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PT_laby_2"
+        mc:Ignorable="d"
+        Title="Create_dialog" Height="411" Width="320">
+    <Grid Margin="10,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="73*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="688*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="create" HorizontalAlignment="Left" Margin="40,263,0,0" VerticalAlignment="Top" Click="create_butt" Grid.Column="3" Height="20" Width="52"/>
+        <TextBox x:Name="Name_str" HorizontalAlignment="Left" Margin="40,52,0,0" TextWrapping="Wrap" Text="file name" VerticalAlignment="Top" Width="171" Grid.Column="3" Height="18"/>
+        <CheckBox x:Name="Readable_bool" Content="Readable" HorizontalAlignment="Left" Margin="69,105,0,0" VerticalAlignment="Top" Grid.Column="3" Height="16" Width="97"/>
+        <CheckBox x:Name="Archive_bool" Content="Archive" HorizontalAlignment="Left" Margin="69,125,0,0" VerticalAlignment="Top" Grid.Column="3" Height="17" Width="84"/>
+        <CheckBox x:Name="Hidden_bool" Content="Hidden" HorizontalAlignment="Left" Margin="69,146,0,0" VerticalAlignment="Top" Grid.Column="3" Height="15" Width="83"/>
+        <CheckBox x:Name="System_bool" Content="System" HorizontalAlignment="Left" Margin="69,166,0,0" VerticalAlignment="Top" Grid.Column="3" Height="15" Width="83"/>
+        <Button Content="exit" HorizontalAlignment="Left" Margin="179,263,0,0" VerticalAlignment="Top" Click="exit_butt" Grid.Column="3" Height="20" Width="32"/>
+        <RadioButton Checked="SetDir" IsChecked="True" Grid.Column="3" Content="Dir" HorizontalAlignment="Left" Margin="66,85,0,0" VerticalAlignment="Top"/>
+        <RadioButton Checked="SetFile" Grid.Column="3" Content="File" HorizontalAlignment="Left" Margin="112,85,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
